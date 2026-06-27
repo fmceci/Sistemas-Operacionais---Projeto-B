@@ -42,10 +42,9 @@ gantt.o:      gantt.c gantt.h task.h scheduler.h config.h
 
 # Atalhos de execucao
 run: $(TARGET)
-	./$(TARGET) ../entrada.txt
+	./$(TARGET).exe ../entrada.txt
 
 run_passo: $(TARGET)
-	./$(TARGET) ../entrada.txt passo
-
+	./$(TARGET).exe ../entrada.txt passo
 clean:
 	rm -f $(OBJS) $(TARGET) gantt.svg
