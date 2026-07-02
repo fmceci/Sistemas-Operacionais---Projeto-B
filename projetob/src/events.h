@@ -17,8 +17,6 @@
  * Além disso, eventos CONCATENADOS sem separador (ex.: "IO:01-02MU01:03")
  * também são reconhecidos, pois o parser detecta os prefixos ML/MU/IO.
  *
- * [CORREÇÃO BUG 4] A lista de eventos agora é ALOCADA DINAMICAMENTE, sem
- * limite fixo. Uma tarefa pode ter milhares de eventos.
  */
 
 /*
@@ -48,12 +46,11 @@ typedef struct {
     int       rel_tick;  /* instante relativo ao início da tarefa */
     int       mutex_id;  /* ID do mutex (LOCK/UNLOCK); -1 para IO */
     int       duration;  /* duração da E/S; 0 para mutex */
+    int       fired;
 } Event;
 
 /*
  * EventList — lista dinâmica de eventos de uma única tarefa.
- *
- * [CORREÇÃO BUG 4] Substituído o array estático por um vetor dinâmico:
  *   list     - ponteiro para os eventos (alocado com malloc/realloc)
  *   count    - número de eventos efetivamente armazenados
  *   capacity - capacidade atual alocada

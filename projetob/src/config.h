@@ -4,9 +4,7 @@
 #include "task.h"
 
 /*
- * MAX_LINE — mantido apenas para compatibilidade histórica. A leitura das
- * linhas passou a ser DINÂMICA (getline), então linhas com milhares de
- * eventos não são mais truncadas (correção do BUG 4).
+ * MAX_LINE — mantido apenas para compatibilidade histórica.
  */
 #define MAX_LINE 512
 

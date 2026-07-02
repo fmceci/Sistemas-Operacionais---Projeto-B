@@ -42,9 +42,9 @@ gantt.o:      gantt.c gantt.h task.h scheduler.h config.h
 
 # Atalhos de execucao
 run: $(TARGET)
-	./$(TARGET).exe ../entrada.txt
+	./$(TARGET).exe ../caso-teste-mc-010-priopenv.txt
 
 run_passo: $(TARGET)
-	./$(TARGET).exe ../entrada.txt passo
+	./$(TARGET).exe ../caso-teste-mc-010-priopenv.txt
 clean:
 	rm -f $(OBJS) $(TARGET) gantt.svg

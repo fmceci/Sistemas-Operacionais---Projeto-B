@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns='http://www.w3.org/2000/svg' width='893' height='654' font-family='monospace' font-size='12'>
+<svg xmlns='http://www.w3.org/2000/svg' width='2961' height='834' font-family='monospace' font-size='12'>
   <defs>
     <!-- CPU desligada: hachura diagonal -->
     <pattern id='hatch_off' patternUnits='userSpaceOnUse' width='6' height='6'>
@@ -23,302 +23,1088 @@
       <rect x='3' y='3' width='3' height='3' fill='#1144aa'/>
     </pattern>
   </defs>
-  <rect width='893' height='654' fill='#1a1a2e'/>
-  <text x='446' y='22' fill='#e0e0f0' font-size='15' font-weight='bold' text-anchor='middle'>Grafico de Gantt - Simulador SO</text>
+  <rect width='2961' height='834' fill='#1a1a2e'/>
+  <text x='1480' y='22' fill='#e0e0f0' font-size='15' font-weight='bold' text-anchor='middle'>Grafico de Gantt - Simulador SO</text>
   <text x='137' y='44' fill='#888899' text-anchor='middle' font-size='11'>0</text>
-  <line x1='115' y1='48' x2='115' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='115' y1='48' x2='115' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='181' y='44' fill='#888899' text-anchor='middle' font-size='11'>1</text>
-  <line x1='159' y1='48' x2='159' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='159' y1='48' x2='159' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='225' y='44' fill='#888899' text-anchor='middle' font-size='11'>2</text>
-  <line x1='203' y1='48' x2='203' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='203' y1='48' x2='203' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='269' y='44' fill='#888899' text-anchor='middle' font-size='11'>3</text>
-  <line x1='247' y1='48' x2='247' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='247' y1='48' x2='247' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='313' y='44' fill='#888899' text-anchor='middle' font-size='11'>4</text>
-  <line x1='291' y1='48' x2='291' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='291' y1='48' x2='291' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='357' y='44' fill='#888899' text-anchor='middle' font-size='11'>5</text>
-  <line x1='335' y1='48' x2='335' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='335' y1='48' x2='335' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='401' y='44' fill='#888899' text-anchor='middle' font-size='11'>6</text>
-  <line x1='379' y1='48' x2='379' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='379' y1='48' x2='379' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='445' y='44' fill='#888899' text-anchor='middle' font-size='11'>7</text>
-  <line x1='423' y1='48' x2='423' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='423' y1='48' x2='423' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='489' y='44' fill='#888899' text-anchor='middle' font-size='11'>8</text>
-  <line x1='467' y1='48' x2='467' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='467' y1='48' x2='467' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='533' y='44' fill='#888899' text-anchor='middle' font-size='11'>9</text>
-  <line x1='511' y1='48' x2='511' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='511' y1='48' x2='511' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='577' y='44' fill='#888899' text-anchor='middle' font-size='11'>10</text>
-  <line x1='555' y1='48' x2='555' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='555' y1='48' x2='555' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='621' y='44' fill='#888899' text-anchor='middle' font-size='11'>11</text>
-  <line x1='599' y1='48' x2='599' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='599' y1='48' x2='599' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='665' y='44' fill='#888899' text-anchor='middle' font-size='11'>12</text>
-  <line x1='643' y1='48' x2='643' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='643' y1='48' x2='643' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='709' y='44' fill='#888899' text-anchor='middle' font-size='11'>13</text>
-  <line x1='687' y1='48' x2='687' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='687' y1='48' x2='687' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='753' y='44' fill='#888899' text-anchor='middle' font-size='11'>14</text>
-  <line x1='731' y1='48' x2='731' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='731' y1='48' x2='731' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='797' y='44' fill='#888899' text-anchor='middle' font-size='11'>15</text>
-  <line x1='775' y1='48' x2='775' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
+  <line x1='775' y1='48' x2='775' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
   <text x='841' y='44' fill='#888899' text-anchor='middle' font-size='11'>16</text>
-  <line x1='819' y1='48' x2='819' y2='324' stroke='#2a2a4a' stroke-width='0.5'/>
-  <text x='109' y='156' fill='#ccccdd' text-anchor='end' font-size='12'>T1</text>
-  <rect x='115' y='138' width='748' height='28' fill='#0e0e20' rx='2'/>
-  <rect x='116' y='139' width='43' height='26' fill='rgb(255,68,0)' rx='2'/>
-  <text x='136' y='156' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
-  <rect x='160' y='139' width='43' height='26' fill='rgb(255,68,0)' rx='2'/>
-  <text x='180' y='156' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
-  <text x='180' y='141' fill='#ff88ff' font-size='8' text-anchor='middle'>ML</text>
-  <rect x='204' y='139' width='43' height='26' fill='rgb(255,68,0)' rx='2'/>
-  <text x='224' y='156' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
-  <rect x='248' y='139' width='43' height='26' fill='rgb(255,68,0)' rx='2'/>
-  <text x='268' y='156' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
-  <rect x='292' y='139' width='43' height='26' fill='rgb(255,68,0)' rx='2'/>
-  <text x='312' y='156' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
-  <rect x='336' y='139' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='356' y='155' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <text x='356' y='141' fill='#ff88ff' font-size='8' text-anchor='middle'>ML</text>
-  <rect x='380' y='139' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='400' y='155' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='424' y='139' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='444' y='155' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='468' y='139' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='488' y='155' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='512' y='139' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='532' y='155' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='556' y='139' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='576' y='155' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='600' y='139' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='620' y='155' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='644' y='139' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='664' y='155' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='688' y='139' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='708' y='155' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='732' y='139' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='752' y='155' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='776' y='139' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='796' y='155' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='820' y='139' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='840' y='155' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <text x='109' y='120' fill='#ccccdd' text-anchor='end' font-size='12'>T2</text>
-  <rect x='115' y='102' width='748' height='28' fill='#0e0e20' rx='2'/>
-  <rect x='116' y='103' width='43' height='26' fill='rgb(0,136,255)' rx='2'/>
-  <text x='136' y='120' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
-  <rect x='160' y='103' width='43' height='26' fill='rgb(0,136,255)' rx='2'/>
-  <text x='180' y='120' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
-  <rect x='204' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
-  <text x='224' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
-  <text x='224' y='105' fill='#44aaff' font-size='8' text-anchor='middle'>IO&#x2193;</text>
-  <rect x='248' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
-  <text x='268' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
-  <text x='268' y='105' fill='#44aaff' font-size='8' text-anchor='middle'>IO&#x2193;</text>
-  <rect x='292' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
-  <text x='312' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
-  <rect x='336' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
-  <text x='356' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
-  <rect x='380' y='103' width='43' height='26' fill='#080808' rx='2'/>
-  <text x='401' y='120' fill='#ffcc00' font-size='12' text-anchor='middle'>&#x2713;</text>
-  <text x='400' y='125' fill='#ffaa00' font-size='8' text-anchor='middle'>IRQ</text>
-  <rect x='424' y='103' width='43' height='26' fill='#080808' rx='2'/>
-  <text x='445' y='120' fill='#ffcc00' font-size='12' text-anchor='middle'>&#x2713;</text>
-  <text x='444' y='125' fill='#ffaa00' font-size='8' text-anchor='middle'>IRQ</text>
-  <rect x='468' y='103' width='43' height='26' fill='#080808' rx='2'/>
-  <rect x='512' y='103' width='43' height='26' fill='#080808' rx='2'/>
-  <rect x='556' y='103' width='43' height='26' fill='#080808' rx='2'/>
-  <rect x='600' y='103' width='43' height='26' fill='#080808' rx='2'/>
-  <rect x='644' y='103' width='43' height='26' fill='#080808' rx='2'/>
-  <rect x='688' y='103' width='43' height='26' fill='#080808' rx='2'/>
-  <rect x='732' y='103' width='43' height='26' fill='#080808' rx='2'/>
-  <rect x='776' y='103' width='43' height='26' fill='#080808' rx='2'/>
-  <rect x='820' y='103' width='43' height='26' fill='#080808' rx='2'/>
-  <text x='109' y='84' fill='#ccccdd' text-anchor='end' font-size='12'>T3</text>
-  <rect x='115' y='66' width='748' height='28' fill='#0e0e20' rx='2'/>
-  <rect x='204' y='67' width='43' height='26' fill='rgb(0,204,68)' rx='2'/>
-  <text x='224' y='84' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
-  <rect x='248' y='67' width='43' height='26' fill='rgb(0,204,68)' rx='2'/>
-  <text x='268' y='84' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
-  <rect x='292' y='67' width='43' height='26' fill='rgb(0,204,68)' rx='2'/>
-  <text x='312' y='84' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
-  <rect x='336' y='67' width='43' height='26' fill='rgb(0,204,68)' rx='2'/>
-  <text x='356' y='84' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
-  <rect x='380' y='67' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='400' y='83' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <text x='400' y='69' fill='#ff88ff' font-size='8' text-anchor='middle'>ML</text>
-  <rect x='424' y='67' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='444' y='83' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='468' y='67' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='488' y='83' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='512' y='67' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='532' y='83' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='556' y='67' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='576' y='83' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='600' y='67' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='620' y='83' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='644' y='67' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='664' y='83' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='688' y='67' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='708' y='83' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='732' y='67' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='752' y='83' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='776' y='67' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='796' y='83' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <rect x='820' y='67' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='840' y='83' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
-  <line x1='115' y1='176' x2='863' y2='176' stroke='#3a3a5a' stroke-width='1'/>
-  <text x='109' y='202' fill='#aaaacc' text-anchor='end' font-size='11'>CPU0</text>
-  <rect x='115' y='184' width='748' height='28' fill='#0a0a1a' rx='2'/>
-  <text x='136' y='201' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
-  <text x='180' y='201' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
-  <text x='224' y='201' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
-  <text x='268' y='201' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
-  <text x='312' y='201' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
-  <text x='356' y='201' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
-  <rect x='380' y='185' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='400' y='201' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='424' y='185' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='444' y='201' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='468' y='185' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='488' y='201' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='512' y='185' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='532' y='201' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='556' y='185' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='576' y='201' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='600' y='185' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='620' y='201' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='644' y='185' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='664' y='201' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='688' y='185' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='708' y='201' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='732' y='185' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='752' y='201' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='776' y='185' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='796' y='201' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='820' y='185' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='840' y='201' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <text x='109' y='238' fill='#aaaacc' text-anchor='end' font-size='11'>CPU1</text>
-  <rect x='115' y='220' width='748' height='28' fill='#0a0a1a' rx='2'/>
-  <text x='136' y='237' fill='#55bbee' font-size='10' text-anchor='middle'>T2</text>
-  <text x='180' y='237' fill='#55bbee' font-size='10' text-anchor='middle'>T2</text>
-  <text x='224' y='237' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
-  <text x='268' y='237' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
-  <text x='312' y='237' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
-  <rect x='336' y='221' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='356' y='237' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='380' y='221' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='400' y='237' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='424' y='221' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='444' y='237' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='468' y='221' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='488' y='237' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='512' y='221' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='532' y='237' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='556' y='221' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='576' y='237' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='600' y='221' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='620' y='237' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='644' y='221' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='664' y='237' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='688' y='221' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='708' y='237' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='732' y='221' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='752' y='237' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='776' y='221' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='796' y='237' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='820' y='221' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='840' y='237' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <text x='109' y='274' fill='#aaaacc' text-anchor='end' font-size='11'>CPU2</text>
-  <rect x='115' y='256' width='748' height='28' fill='#0a0a1a' rx='2'/>
-  <rect x='116' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='136' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='160' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='180' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='204' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='224' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='248' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='268' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='292' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='312' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='336' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='356' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='380' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='400' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='424' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='444' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='468' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='488' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='512' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='532' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='556' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='576' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='600' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='620' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='644' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='664' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='688' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='708' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='732' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='752' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='776' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='796' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='820' y='257' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='840' y='273' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <text x='109' y='310' fill='#aaaacc' text-anchor='end' font-size='11'>CPU3</text>
-  <rect x='115' y='292' width='748' height='28' fill='#0a0a1a' rx='2'/>
-  <rect x='116' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='136' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='160' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='180' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='204' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='224' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='248' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='268' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='292' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='312' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='336' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='356' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='380' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='400' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='424' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='444' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='468' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='488' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='512' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='532' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='556' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='576' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='600' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='620' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='644' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='664' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='688' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='708' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='732' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='752' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='776' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='796' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <rect x='820' y='293' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
-  <text x='840' y='309' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
-  <text x='12' y='352' fill='#ffffff' font-size='13' font-weight='bold'>Legenda:</text>
-  <rect x='12' y='372' width='24' height='14' fill='#3399ff' rx='2'/>
-  <text x='16' y='379' fill='#ffffff' font-size='10' font-weight='bold' dominant-baseline='middle'>Cx</text>
-  <text x='42' y='379' fill='#ccccdd' font-size='12'>Executando na CPU x (cor propria da tarefa)</text>
-  <rect x='12' y='392' width='24' height='14' fill='url(#dots_ready)' rx='2'/>
-  <text x='42' y='399' fill='#ccccdd' font-size='12'>Pronta (fila de prontos, aguardando CPU)</text>
-  <rect x='12' y='412' width='24' height='14' fill='url(#hatch_mutex)' rx='2'/>
-  <text x='42' y='419' fill='#ccccdd' font-size='12'>Suspensa por mutex indisponivel (req 2.9)</text>
-  <rect x='12' y='432' width='24' height='14' fill='url(#hatch_io)' rx='2'/>
-  <text x='42' y='439' fill='#ccccdd' font-size='12'>Suspensa por operacao de E/S (req 3.8)</text>
-  <text x='16' y='462' fill='#00ee55' font-size='14'>&#x2193;</text>
-  <text x='42' y='459' fill='#ccccdd' font-size='12'>Chegada da tarefa ao sistema</text>
-  <text x='16' y='482' fill='#ffcc00' font-size='13'>&#x2713;</text>
-  <text x='42' y='479' fill='#ccccdd' font-size='12'>Tarefa concluida</text>
-  <text x='16' y='502' fill='#ee44ff' font-size='10'>&#x2605;</text>
-  <text x='42' y='499' fill='#ccccdd' font-size='12'>Desempate por sorteio</text>
-  <text x='16' y='522' fill='#ff88ff' font-size='10' font-weight='bold'>ML</text>
-  <text x='42' y='519' fill='#ccccdd' font-size='12'>Solicitacao de mutex (lock) — req 2.8</text>
-  <text x='16' y='542' fill='#aaffaa' font-size='10' font-weight='bold'>MU</text>
-  <text x='42' y='539' fill='#ccccdd' font-size='12'>Liberacao de mutex (unlock) — req 2.8</text>
-  <text x='16' y='562' fill='#44aaff' font-size='10' font-weight='bold'>IO&#x2193;</text>
-  <text x='42' y='559' fill='#ccccdd' font-size='12'>Inicio de operacao de E/S — req 5.1</text>
-  <text x='16' y='582' fill='#ffaa00' font-size='10' font-weight='bold'>IRQ</text>
-  <text x='42' y='579' fill='#ccccdd' font-size='12'>E/S concluida (IRQ gerada) — req 3.4</text>
-  <rect x='12' y='592' width='24' height='14' fill='url(#hatch_off)' rx='2'/>
-  <text x='42' y='599' fill='#ccccdd' font-size='12'>CPU desligada (sem tarefa disponivel)</text>
+  <line x1='819' y1='48' x2='819' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='885' y='44' fill='#888899' text-anchor='middle' font-size='11'>17</text>
+  <line x1='863' y1='48' x2='863' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='929' y='44' fill='#888899' text-anchor='middle' font-size='11'>18</text>
+  <line x1='907' y1='48' x2='907' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='973' y='44' fill='#888899' text-anchor='middle' font-size='11'>19</text>
+  <line x1='951' y1='48' x2='951' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1017' y='44' fill='#888899' text-anchor='middle' font-size='11'>20</text>
+  <line x1='995' y1='48' x2='995' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1061' y='44' fill='#888899' text-anchor='middle' font-size='11'>21</text>
+  <line x1='1039' y1='48' x2='1039' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1105' y='44' fill='#888899' text-anchor='middle' font-size='11'>22</text>
+  <line x1='1083' y1='48' x2='1083' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1149' y='44' fill='#888899' text-anchor='middle' font-size='11'>23</text>
+  <line x1='1127' y1='48' x2='1127' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1193' y='44' fill='#888899' text-anchor='middle' font-size='11'>24</text>
+  <line x1='1171' y1='48' x2='1171' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1237' y='44' fill='#888899' text-anchor='middle' font-size='11'>25</text>
+  <line x1='1215' y1='48' x2='1215' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1281' y='44' fill='#888899' text-anchor='middle' font-size='11'>26</text>
+  <line x1='1259' y1='48' x2='1259' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1325' y='44' fill='#888899' text-anchor='middle' font-size='11'>27</text>
+  <line x1='1303' y1='48' x2='1303' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1369' y='44' fill='#888899' text-anchor='middle' font-size='11'>28</text>
+  <line x1='1347' y1='48' x2='1347' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1413' y='44' fill='#888899' text-anchor='middle' font-size='11'>29</text>
+  <line x1='1391' y1='48' x2='1391' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1457' y='44' fill='#888899' text-anchor='middle' font-size='11'>30</text>
+  <line x1='1435' y1='48' x2='1435' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1501' y='44' fill='#888899' text-anchor='middle' font-size='11'>31</text>
+  <line x1='1479' y1='48' x2='1479' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1545' y='44' fill='#888899' text-anchor='middle' font-size='11'>32</text>
+  <line x1='1523' y1='48' x2='1523' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1589' y='44' fill='#888899' text-anchor='middle' font-size='11'>33</text>
+  <line x1='1567' y1='48' x2='1567' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1633' y='44' fill='#888899' text-anchor='middle' font-size='11'>34</text>
+  <line x1='1611' y1='48' x2='1611' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1677' y='44' fill='#888899' text-anchor='middle' font-size='11'>35</text>
+  <line x1='1655' y1='48' x2='1655' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1721' y='44' fill='#888899' text-anchor='middle' font-size='11'>36</text>
+  <line x1='1699' y1='48' x2='1699' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1765' y='44' fill='#888899' text-anchor='middle' font-size='11'>37</text>
+  <line x1='1743' y1='48' x2='1743' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1809' y='44' fill='#888899' text-anchor='middle' font-size='11'>38</text>
+  <line x1='1787' y1='48' x2='1787' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1853' y='44' fill='#888899' text-anchor='middle' font-size='11'>39</text>
+  <line x1='1831' y1='48' x2='1831' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1897' y='44' fill='#888899' text-anchor='middle' font-size='11'>40</text>
+  <line x1='1875' y1='48' x2='1875' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1941' y='44' fill='#888899' text-anchor='middle' font-size='11'>41</text>
+  <line x1='1919' y1='48' x2='1919' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='1985' y='44' fill='#888899' text-anchor='middle' font-size='11'>42</text>
+  <line x1='1963' y1='48' x2='1963' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2029' y='44' fill='#888899' text-anchor='middle' font-size='11'>43</text>
+  <line x1='2007' y1='48' x2='2007' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2073' y='44' fill='#888899' text-anchor='middle' font-size='11'>44</text>
+  <line x1='2051' y1='48' x2='2051' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2117' y='44' fill='#888899' text-anchor='middle' font-size='11'>45</text>
+  <line x1='2095' y1='48' x2='2095' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2161' y='44' fill='#888899' text-anchor='middle' font-size='11'>46</text>
+  <line x1='2139' y1='48' x2='2139' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2205' y='44' fill='#888899' text-anchor='middle' font-size='11'>47</text>
+  <line x1='2183' y1='48' x2='2183' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2249' y='44' fill='#888899' text-anchor='middle' font-size='11'>48</text>
+  <line x1='2227' y1='48' x2='2227' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2293' y='44' fill='#888899' text-anchor='middle' font-size='11'>49</text>
+  <line x1='2271' y1='48' x2='2271' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2337' y='44' fill='#888899' text-anchor='middle' font-size='11'>50</text>
+  <line x1='2315' y1='48' x2='2315' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2381' y='44' fill='#888899' text-anchor='middle' font-size='11'>51</text>
+  <line x1='2359' y1='48' x2='2359' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2425' y='44' fill='#888899' text-anchor='middle' font-size='11'>52</text>
+  <line x1='2403' y1='48' x2='2403' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2469' y='44' fill='#888899' text-anchor='middle' font-size='11'>53</text>
+  <line x1='2447' y1='48' x2='2447' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2513' y='44' fill='#888899' text-anchor='middle' font-size='11'>54</text>
+  <line x1='2491' y1='48' x2='2491' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2557' y='44' fill='#888899' text-anchor='middle' font-size='11'>55</text>
+  <line x1='2535' y1='48' x2='2535' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2601' y='44' fill='#888899' text-anchor='middle' font-size='11'>56</text>
+  <line x1='2579' y1='48' x2='2579' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2645' y='44' fill='#888899' text-anchor='middle' font-size='11'>57</text>
+  <line x1='2623' y1='48' x2='2623' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2689' y='44' fill='#888899' text-anchor='middle' font-size='11'>58</text>
+  <line x1='2667' y1='48' x2='2667' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2733' y='44' fill='#888899' text-anchor='middle' font-size='11'>59</text>
+  <line x1='2711' y1='48' x2='2711' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2777' y='44' fill='#888899' text-anchor='middle' font-size='11'>60</text>
+  <line x1='2755' y1='48' x2='2755' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2821' y='44' fill='#888899' text-anchor='middle' font-size='11'>61</text>
+  <line x1='2799' y1='48' x2='2799' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2865' y='44' fill='#888899' text-anchor='middle' font-size='11'>62</text>
+  <line x1='2843' y1='48' x2='2843' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='2909' y='44' fill='#888899' text-anchor='middle' font-size='11'>63</text>
+  <line x1='2887' y1='48' x2='2887' y2='504' stroke='#2a2a4a' stroke-width='0.5'/>
+  <text x='109' y='408' fill='#ccccdd' text-anchor='end' font-size='12'>T1</text>
+  <rect x='115' y='390' width='2816' height='28' fill='#0e0e20' rx='2'/>
+  <rect x='248' y='391' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='268' y='407' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <text x='268' y='393' fill='#ff88ff' font-size='8' text-anchor='middle'>ML</text>
+  <rect x='292' y='391' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='312' y='407' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='336' y='391' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='356' y='407' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='380' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='424' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='468' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='512' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='556' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='600' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='644' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='688' y='391' width='43' height='26' fill='rgb(0,0,255)' rx='2'/>
+  <text x='708' y='408' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='732' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='776' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='820' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='864' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='908' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='952' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='996' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1040' y='391' width='43' height='26' fill='rgb(0,0,255)' rx='2'/>
+  <text x='1060' y='408' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1084' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1128' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1172' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1216' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1260' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1304' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1348' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1392' y='391' width='43' height='26' fill='rgb(0,0,255)' rx='2'/>
+  <text x='1412' y='408' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1436' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1480' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1524' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1568' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1612' y='391' width='43' height='26' fill='rgb(0,0,255)' rx='2'/>
+  <text x='1632' y='408' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1656' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1700' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1744' y='391' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1788' y='391' width='43' height='26' fill='rgb(0,0,255)' rx='2'/>
+  <text x='1808' y='408' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1832' y='391' width='43' height='26' fill='rgb(0,0,255)' rx='2'/>
+  <text x='1852' y='408' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <text x='1852' y='393' fill='#aaffaa' font-size='8' text-anchor='middle'>MU</text>
+  <rect x='1876' y='391' width='43' height='26' fill='rgb(0,0,255)' rx='2'/>
+  <text x='1896' y='408' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1920' y='391' width='43' height='26' fill='rgb(0,0,255)' rx='2'/>
+  <text x='1940' y='408' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1964' y='391' width='43' height='26' fill='rgb(0,0,255)' rx='2'/>
+  <text x='1984' y='408' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <text x='1985' y='408' fill='#ffcc00' font-size='12' text-anchor='middle'>&#x2713;</text>
+  <rect x='2008' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2052' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2096' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2140' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2184' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2228' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2272' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2316' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2360' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2404' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2448' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2492' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2536' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2580' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2624' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2668' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2712' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2756' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2800' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2844' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2888' y='391' width='43' height='26' fill='#080808' rx='2'/>
+  <text x='109' y='372' fill='#ccccdd' text-anchor='end' font-size='12'>T2</text>
+  <rect x='115' y='354' width='2816' height='28' fill='#0e0e20' rx='2'/>
+  <rect x='248' y='355' width='43' height='26' fill='rgb(0,255,0)' rx='2'/>
+  <text x='268' y='372' fill='#111111' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='292' y='355' width='43' height='26' fill='rgb(0,255,0)' rx='2'/>
+  <text x='312' y='372' fill='#111111' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='336' y='355' width='43' height='26' fill='rgb(0,255,0)' rx='2'/>
+  <text x='356' y='372' fill='#111111' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='380' y='355' width='43' height='26' fill='rgb(0,255,0)' rx='2'/>
+  <text x='400' y='372' fill='#111111' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='424' y='355' width='43' height='26' fill='rgb(0,255,0)' rx='2'/>
+  <text x='444' y='372' fill='#111111' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='468' y='355' width='43' height='26' fill='rgb(0,255,0)' rx='2'/>
+  <text x='488' y='372' fill='#111111' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='512' y='355' width='43' height='26' fill='rgb(0,255,0)' rx='2'/>
+  <text x='532' y='372' fill='#111111' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='556' y='355' width='43' height='26' fill='rgb(0,255,0)' rx='2'/>
+  <text x='576' y='372' fill='#111111' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='600' y='355' width='43' height='26' fill='rgb(0,255,0)' rx='2'/>
+  <text x='620' y='372' fill='#111111' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='644' y='355' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='688' y='355' width='43' height='26' fill='rgb(0,255,0)' rx='2'/>
+  <text x='708' y='372' fill='#111111' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <text x='709' y='372' fill='#ffcc00' font-size='12' text-anchor='middle'>&#x2713;</text>
+  <rect x='732' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='776' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='820' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='864' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='908' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='952' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='996' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1040' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1084' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1128' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1172' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1216' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1260' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1304' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1348' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1392' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1436' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1480' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1524' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1568' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1612' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1656' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1700' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1744' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1788' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1832' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1876' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1920' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1964' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2008' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2052' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2096' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2140' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2184' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2228' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2272' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2316' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2360' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2404' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2448' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2492' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2536' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2580' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2624' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2668' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2712' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2756' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2800' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2844' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2888' y='355' width='43' height='26' fill='#080808' rx='2'/>
+  <text x='109' y='336' fill='#ccccdd' text-anchor='end' font-size='12'>T3</text>
+  <rect x='115' y='318' width='2816' height='28' fill='#0e0e20' rx='2'/>
+  <rect x='160' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='180' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <text x='180' y='321' fill='#ff88ff' font-size='8' text-anchor='middle'>ML</text>
+  <rect x='204' y='319' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='224' y='335' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <text x='224' y='321' fill='#44aaff' font-size='8' text-anchor='middle'>IO&#x2193;</text>
+  <rect x='248' y='319' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='268' y='335' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='292' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='312' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <text x='312' y='341' fill='#ffaa00' font-size='8' text-anchor='middle'>IRQ</text>
+  <rect x='336' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='356' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='380' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='400' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <text x='400' y='321' fill='#aaffaa' font-size='8' text-anchor='middle'>MU</text>
+  <rect x='424' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='444' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='468' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='488' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='512' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='556' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='576' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='600' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='644' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='688' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='732' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='776' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='796' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='820' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='864' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='908' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='952' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='996' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='1016' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1040' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1084' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1128' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1172' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='1192' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1216' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1260' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1304' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1348' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1368' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <text x='1368' y='321' fill='#ff88ff' font-size='8' text-anchor='middle'>ML</text>
+  <rect x='1392' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1412' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1436' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1456' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1480' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1500' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1524' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1544' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1568' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1588' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1612' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1632' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1656' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1676' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1700' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1720' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1744' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1764' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1788' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1808' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1832' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1852' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1876' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1896' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1920' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1940' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1964' y='319' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1984' y='335' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='2008' y='319' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='2052' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2072' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2096' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2116' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2140' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2160' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <text x='2160' y='321' fill='#aaffaa' font-size='8' text-anchor='middle'>MU</text>
+  <rect x='2184' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2204' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2228' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2248' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2272' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2292' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2316' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2336' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2360' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2380' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2404' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2424' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2448' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2468' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2492' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2512' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2536' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2556' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2580' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2600' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2624' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2644' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2668' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2688' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2712' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2732' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2756' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2776' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2800' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2820' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2844' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2864' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='2888' y='319' width='43' height='26' fill='rgb(255,0,0)' rx='2'/>
+  <text x='2908' y='336' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <text x='2909' y='336' fill='#ffcc00' font-size='12' text-anchor='middle'>&#x2713;</text>
+  <text x='109' y='300' fill='#ccccdd' text-anchor='end' font-size='12'>T4</text>
+  <rect x='115' y='282' width='2816' height='28' fill='#0e0e20' rx='2'/>
+  <rect x='732' y='283' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <text x='753' y='282' fill='#00ee55' font-size='13' text-anchor='middle'>&#x2193;</text>
+  <rect x='776' y='283' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='820' y='283' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='864' y='283' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='908' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='928' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <text x='928' y='285' fill='#ff88ff' font-size='8' text-anchor='middle'>ML</text>
+  <rect x='952' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='972' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='996' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1016' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1040' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1060' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1084' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1104' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1128' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1148' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1172' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1192' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1216' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1236' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1260' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1280' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1304' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1324' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1348' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1368' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1392' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1412' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1436' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1456' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1480' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1500' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1524' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1544' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1568' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1588' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1612' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1632' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1656' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1676' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1700' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1720' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1744' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1764' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1788' y='283' width='43' height='26' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='1808' y='299' fill='#cc44ff' font-size='9' text-anchor='middle'>&#x1F512;</text>
+  <rect x='1832' y='283' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1876' y='283' width='43' height='26' fill='rgb(0,0,85)' rx='2'/>
+  <text x='1896' y='300' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1920' y='283' width='43' height='26' fill='rgb(0,0,85)' rx='2'/>
+  <text x='1940' y='300' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1964' y='283' width='43' height='26' fill='rgb(0,0,85)' rx='2'/>
+  <text x='1984' y='300' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <text x='1985' y='300' fill='#ffcc00' font-size='12' text-anchor='middle'>&#x2713;</text>
+  <rect x='2008' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <text x='2028' y='285' fill='#aaffaa' font-size='8' text-anchor='middle'>MU</text>
+  <rect x='2052' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2096' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2140' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2184' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2228' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2272' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2316' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2360' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2404' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2448' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2492' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2536' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2580' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2624' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2668' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2712' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2756' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2800' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2844' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2888' y='283' width='43' height='26' fill='#080808' rx='2'/>
+  <text x='109' y='264' fill='#ccccdd' text-anchor='end' font-size='12'>T5</text>
+  <rect x='115' y='246' width='2816' height='28' fill='#0e0e20' rx='2'/>
+  <rect x='600' y='247' width='43' height='26' fill='rgb(0,85,0)' rx='2'/>
+  <text x='620' y='264' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='644' y='247' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='688' y='247' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='732' y='247' width='43' height='26' fill='rgb(0,85,0)' rx='2'/>
+  <text x='752' y='264' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='776' y='247' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='820' y='247' width='43' height='26' fill='rgb(0,85,0)' rx='2'/>
+  <text x='840' y='264' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='864' y='247' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='908' y='247' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='952' y='247' width='43' height='26' fill='rgb(0,85,0)' rx='2'/>
+  <text x='972' y='264' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='996' y='247' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1040' y='247' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='1060' y='263' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <text x='1060' y='249' fill='#44aaff' font-size='8' text-anchor='middle'>IO&#x2193;</text>
+  <rect x='1084' y='247' width='43' height='26' fill='rgb(0,85,0)' rx='2'/>
+  <text x='1104' y='264' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <text x='1104' y='269' fill='#ffaa00' font-size='8' text-anchor='middle'>IRQ</text>
+  <rect x='1128' y='247' width='43' height='26' fill='rgb(0,85,0)' rx='2'/>
+  <text x='1148' y='264' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1172' y='247' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1216' y='247' width='43' height='26' fill='rgb(0,85,0)' rx='2'/>
+  <text x='1236' y='264' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1260' y='247' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1304' y='247' width='43' height='26' fill='rgb(0,85,0)' rx='2'/>
+  <text x='1324' y='264' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1348' y='247' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1392' y='247' width='43' height='26' fill='rgb(0,85,0)' rx='2'/>
+  <text x='1412' y='264' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <text x='1413' y='264' fill='#ffcc00' font-size='12' text-anchor='middle'>&#x2713;</text>
+  <rect x='1436' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1480' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1524' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1568' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1612' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1656' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1700' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1744' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1788' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1832' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1876' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1920' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1964' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2008' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2052' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2096' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2140' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2184' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2228' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2272' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2316' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2360' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2404' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2448' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2492' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2536' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2580' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2624' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2668' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2712' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2756' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2800' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2844' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2888' y='247' width='43' height='26' fill='#080808' rx='2'/>
+  <text x='109' y='228' fill='#ccccdd' text-anchor='end' font-size='12'>T6</text>
+  <rect x='115' y='210' width='2816' height='28' fill='#0e0e20' rx='2'/>
+  <rect x='644' y='211' width='43' height='26' fill='rgb(85,0,0)' rx='2'/>
+  <text x='664' y='228' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='688' y='211' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='732' y='211' width='43' height='26' fill='rgb(85,0,0)' rx='2'/>
+  <text x='752' y='228' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='776' y='211' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='820' y='211' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='864' y='211' width='43' height='26' fill='rgb(85,0,0)' rx='2'/>
+  <text x='884' y='228' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='908' y='211' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='952' y='211' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='972' y='227' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <text x='972' y='213' fill='#44aaff' font-size='8' text-anchor='middle'>IO&#x2193;</text>
+  <rect x='996' y='211' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='1016' y='227' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='1040' y='211' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='1060' y='227' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='1084' y='211' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <text x='1104' y='233' fill='#ffaa00' font-size='8' text-anchor='middle'>IRQ</text>
+  <rect x='1128' y='211' width='43' height='26' fill='rgb(85,0,0)' rx='2'/>
+  <text x='1148' y='228' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1172' y='211' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1216' y='211' width='43' height='26' fill='rgb(85,0,0)' rx='2'/>
+  <text x='1236' y='228' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1260' y='211' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1304' y='211' width='43' height='26' fill='rgb(85,0,0)' rx='2'/>
+  <text x='1324' y='228' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1348' y='211' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1392' y='211' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1436' y='211' width='43' height='26' fill='rgb(85,0,0)' rx='2'/>
+  <text x='1456' y='228' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1480' y='211' width='43' height='26' fill='rgb(85,0,0)' rx='2'/>
+  <text x='1500' y='228' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1524' y='211' width='43' height='26' fill='rgb(85,0,0)' rx='2'/>
+  <text x='1544' y='228' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <text x='1545' y='228' fill='#ffcc00' font-size='12' text-anchor='middle'>&#x2713;</text>
+  <rect x='1568' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1612' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1656' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1700' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1744' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1788' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1832' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1876' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1920' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1964' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2008' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2052' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2096' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2140' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2184' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2228' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2272' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2316' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2360' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2404' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2448' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2492' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2536' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2580' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2624' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2668' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2712' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2756' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2800' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2844' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2888' y='211' width='43' height='26' fill='#080808' rx='2'/>
+  <text x='109' y='192' fill='#ccccdd' text-anchor='end' font-size='12'>T7</text>
+  <rect x='115' y='174' width='2816' height='28' fill='#0e0e20' rx='2'/>
+  <rect x='556' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <text x='577' y='174' fill='#00ee55' font-size='13' text-anchor='middle'>&#x2193;</text>
+  <rect x='600' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='644' y='175' width='43' height='26' fill='rgb(0,0,170)' rx='2'/>
+  <text x='664' y='192' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='688' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='732' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='776' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='820' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='864' y='175' width='43' height='26' fill='rgb(0,0,170)' rx='2'/>
+  <text x='884' y='192' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='908' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='952' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='996' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1040' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1084' y='175' width='43' height='26' fill='rgb(0,0,170)' rx='2'/>
+  <text x='1104' y='192' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1128' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1172' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1216' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1260' y='175' width='43' height='26' fill='rgb(0,0,170)' rx='2'/>
+  <text x='1280' y='192' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1304' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1348' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1392' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1436' y='175' width='43' height='26' fill='rgb(0,0,170)' rx='2'/>
+  <text x='1456' y='192' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1480' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1524' y='175' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1568' y='175' width='43' height='26' fill='rgb(0,0,170)' rx='2'/>
+  <text x='1588' y='192' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1612' y='175' width='43' height='26' fill='rgb(0,0,170)' rx='2'/>
+  <text x='1632' y='192' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <text x='1633' y='192' fill='#ffcc00' font-size='12' text-anchor='middle'>&#x2713;</text>
+  <rect x='1656' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1700' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1744' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1788' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1832' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1876' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1920' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1964' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2008' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2052' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2096' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2140' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2184' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2228' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2272' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2316' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2360' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2404' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2448' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2492' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2536' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2580' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2624' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2668' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2712' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2756' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2800' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2844' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2888' y='175' width='43' height='26' fill='#080808' rx='2'/>
+  <text x='109' y='156' fill='#ccccdd' text-anchor='end' font-size='12'>T8</text>
+  <rect x='115' y='138' width='2816' height='28' fill='#0e0e20' rx='2'/>
+  <rect x='688' y='139' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <text x='709' y='138' fill='#00ee55' font-size='13' text-anchor='middle'>&#x2193;</text>
+  <rect x='732' y='139' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='776' y='139' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='820' y='139' width='43' height='26' fill='rgb(0,170,0)' rx='2'/>
+  <text x='840' y='156' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='864' y='139' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='908' y='139' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='952' y='139' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='996' y='139' width='43' height='26' fill='rgb(0,170,0)' rx='2'/>
+  <text x='1016' y='156' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1040' y='139' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1084' y='139' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1128' y='139' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1172' y='139' width='43' height='26' fill='rgb(0,170,0)' rx='2'/>
+  <text x='1192' y='156' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <text x='1193' y='156' fill='#ffcc00' font-size='12' text-anchor='middle'>&#x2713;</text>
+  <rect x='1216' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1260' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1304' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1348' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1392' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1436' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1480' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1524' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1568' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1612' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1656' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1700' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1744' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1788' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1832' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1876' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1920' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1964' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2008' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2052' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2096' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2140' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2184' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2228' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2272' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2316' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2360' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2404' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2448' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2492' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2536' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2580' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2624' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2668' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2712' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2756' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2800' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2844' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2888' y='139' width='43' height='26' fill='#080808' rx='2'/>
+  <text x='109' y='120' fill='#ccccdd' text-anchor='end' font-size='12'>T9</text>
+  <rect x='115' y='102' width='2816' height='28' fill='#0e0e20' rx='2'/>
+  <rect x='468' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <text x='489' y='102' fill='#00ee55' font-size='13' text-anchor='middle'>&#x2193;</text>
+  <rect x='512' y='103' width='43' height='26' fill='rgb(170,0,0)' rx='2'/>
+  <text x='532' y='120' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='556' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='600' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='644' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='688' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='732' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='776' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='796' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <text x='796' y='105' fill='#44aaff' font-size='8' text-anchor='middle'>IO&#x2193;</text>
+  <rect x='820' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='840' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='864' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='884' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='908' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='928' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='952' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='972' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='996' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='1016' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='1040' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='1060' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='1084' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='1104' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='1128' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='1148' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='1172' y='103' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='1192' y='119' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='1216' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <text x='1236' y='125' fill='#ffaa00' font-size='8' text-anchor='middle'>IRQ</text>
+  <rect x='1260' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1304' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1348' y='103' width='43' height='26' fill='rgb(170,0,0)' rx='2'/>
+  <text x='1368' y='120' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1392' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1436' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1480' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1524' y='103' width='43' height='26' fill='rgb(170,0,0)' rx='2'/>
+  <text x='1544' y='120' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1568' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1612' y='103' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1656' y='103' width='43' height='26' fill='rgb(170,0,0)' rx='2'/>
+  <text x='1676' y='120' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1700' y='103' width='43' height='26' fill='rgb(170,0,0)' rx='2'/>
+  <text x='1720' y='120' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1744' y='103' width='43' height='26' fill='rgb(170,0,0)' rx='2'/>
+  <text x='1764' y='120' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <text x='1764' y='105' fill='#ff88ff' font-size='8' text-anchor='middle'>ML</text>
+  <rect x='1788' y='103' width='43' height='26' fill='rgb(170,0,0)' rx='2'/>
+  <text x='1808' y='120' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <text x='1809' y='120' fill='#ffcc00' font-size='12' text-anchor='middle'>&#x2713;</text>
+  <text x='1808' y='105' fill='#aaffaa' font-size='8' text-anchor='middle'>MU</text>
+  <rect x='1832' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1876' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1920' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1964' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2008' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2052' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2096' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2140' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2184' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2228' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2272' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2316' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2360' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2404' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2448' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2492' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2536' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2580' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2624' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2668' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2712' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2756' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2800' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2844' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2888' y='103' width='43' height='26' fill='#080808' rx='2'/>
+  <text x='109' y='84' fill='#ccccdd' text-anchor='end' font-size='12'>T10</text>
+  <rect x='115' y='66' width='2816' height='28' fill='#0e0e20' rx='2'/>
+  <rect x='688' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <text x='709' y='66' fill='#00ee55' font-size='13' text-anchor='middle'>&#x2193;</text>
+  <rect x='732' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='776' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='820' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='864' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='908' y='67' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='928' y='83' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <text x='928' y='69' fill='#44aaff' font-size='8' text-anchor='middle'>IO&#x2193;</text>
+  <rect x='952' y='67' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='972' y='83' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='996' y='67' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='1016' y='83' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='1040' y='67' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='1060' y='83' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='1084' y='67' width='43' height='26' fill='url(#hatch_io)' rx='2'/>
+  <text x='1104' y='83' fill='#4488ff' font-size='8' text-anchor='middle'>IO</text>
+  <rect x='1128' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <text x='1148' y='89' fill='#ffaa00' font-size='8' text-anchor='middle'>IRQ</text>
+  <rect x='1172' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1216' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1260' y='67' width='43' height='26' fill='rgb(170,0,255)' rx='2'/>
+  <text x='1280' y='84' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1304' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1348' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1392' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1436' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1480' y='67' width='43' height='26' fill='rgb(170,0,255)' rx='2'/>
+  <text x='1500' y='84' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C0</text>
+  <rect x='1524' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1568' y='67' width='43' height='26' fill='rgb(170,0,255)' rx='2'/>
+  <text x='1588' y='84' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1612' y='67' width='43' height='26' fill='url(#dots_ready)' rx='2'/>
+  <rect x='1656' y='67' width='43' height='26' fill='rgb(170,0,255)' rx='2'/>
+  <text x='1676' y='84' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1700' y='67' width='43' height='26' fill='rgb(170,0,255)' rx='2'/>
+  <text x='1720' y='84' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <rect x='1744' y='67' width='43' height='26' fill='rgb(170,0,255)' rx='2'/>
+  <text x='1764' y='84' fill='#eeeeee' font-size='10' text-anchor='middle' font-weight='bold'>C1</text>
+  <text x='1765' y='84' fill='#ffcc00' font-size='12' text-anchor='middle'>&#x2713;</text>
+  <rect x='1788' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1832' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1876' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1920' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='1964' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2008' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2052' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2096' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2140' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2184' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2228' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2272' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2316' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2360' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2404' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2448' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2492' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2536' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2580' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2624' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2668' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2712' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2756' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2800' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2844' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <rect x='2888' y='67' width='43' height='26' fill='#080808' rx='2'/>
+  <line x1='115' y1='428' x2='2931' y2='428' stroke='#3a3a5a' stroke-width='1'/>
+  <text x='109' y='454' fill='#aaaacc' text-anchor='end' font-size='11'>CPU0</text>
+  <rect x='115' y='436' width='2816' height='28' fill='#0a0a1a' rx='2'/>
+  <rect x='116' y='437' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='136' y='453' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <text x='180' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <rect x='204' y='437' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='224' y='453' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <text x='268' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T2</text>
+  <text x='312' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T2</text>
+  <text x='356' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T2</text>
+  <text x='400' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T2</text>
+  <text x='444' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T2</text>
+  <text x='488' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T2</text>
+  <text x='532' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T2</text>
+  <text x='576' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T2</text>
+  <text x='620' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T5</text>
+  <text x='664' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T6</text>
+  <text x='708' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
+  <text x='752' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T5</text>
+  <text x='796' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='840' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T8</text>
+  <text x='884' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T6</text>
+  <rect x='908' y='437' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='928' y='453' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <text x='972' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T5</text>
+  <text x='1016' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='1060' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
+  <text x='1104' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T7</text>
+  <text x='1148' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T6</text>
+  <text x='1192' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='1236' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T5</text>
+  <text x='1280' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T7</text>
+  <text x='1324' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T5</text>
+  <rect x='1348' y='437' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='1368' y='453' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <text x='1412' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
+  <text x='1456' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T6</text>
+  <text x='1500' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T10</text>
+  <text x='1544' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T9</text>
+  <text x='1588' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T7</text>
+  <text x='1632' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
+  <text x='1676' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T9</text>
+  <text x='1720' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T9</text>
+  <text x='1764' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T9</text>
+  <text x='1808' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
+  <text x='1852' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
+  <text x='1896' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T4</text>
+  <text x='1940' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T4</text>
+  <text x='1984' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T4</text>
+  <rect x='2008' y='437' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2028' y='453' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <text x='2072' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2116' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2160' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2204' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2248' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2292' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2336' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2380' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2424' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2468' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2512' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2556' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2600' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2644' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2688' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2732' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2776' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2820' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2864' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='2908' y='453' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='109' y='490' fill='#aaaacc' text-anchor='end' font-size='11'>CPU1</text>
+  <rect x='115' y='472' width='2816' height='28' fill='#0a0a1a' rx='2'/>
+  <rect x='116' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='136' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='160' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='180' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='204' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='224' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='248' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='268' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <text x='312' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='356' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='400' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='444' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='488' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='532' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T9</text>
+  <text x='576' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T3</text>
+  <text x='620' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T2</text>
+  <text x='664' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T7</text>
+  <text x='708' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T2</text>
+  <text x='752' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T6</text>
+  <rect x='776' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='796' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <text x='840' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T5</text>
+  <text x='884' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T7</text>
+  <rect x='908' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='928' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='952' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='972' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <text x='1016' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T8</text>
+  <rect x='1040' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='1060' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <text x='1104' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T5</text>
+  <text x='1148' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T5</text>
+  <text x='1192' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T8</text>
+  <text x='1236' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T6</text>
+  <text x='1280' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T10</text>
+  <text x='1324' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T6</text>
+  <text x='1368' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T9</text>
+  <text x='1412' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T5</text>
+  <text x='1456' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T7</text>
+  <text x='1500' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T6</text>
+  <text x='1544' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T6</text>
+  <text x='1588' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T10</text>
+  <text x='1632' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T7</text>
+  <text x='1676' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T10</text>
+  <text x='1720' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T10</text>
+  <text x='1764' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T10</text>
+  <text x='1808' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T9</text>
+  <rect x='1832' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='1852' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <text x='1896' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
+  <text x='1940' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
+  <text x='1984' y='489' fill='#55bbee' font-size='10' text-anchor='middle'>T1</text>
+  <rect x='2008' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2028' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2052' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2072' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2096' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2116' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2140' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2160' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2184' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2204' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2228' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2248' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2272' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2292' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2316' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2336' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2360' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2380' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2404' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2424' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2448' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2468' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2492' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2512' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2536' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2556' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2580' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2600' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2624' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2644' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2668' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2688' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2712' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2732' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2756' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2776' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2800' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2820' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2844' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2864' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <rect x='2888' y='473' width='43' height='26' fill='url(#hatch_off)' rx='2'/>
+  <text x='2908' y='489' fill='#cc3333' font-size='9' text-anchor='middle'>OFF</text>
+  <text x='12' y='532' fill='#ffffff' font-size='13' font-weight='bold'>Legenda:</text>
+  <rect x='12' y='552' width='24' height='14' fill='#3399ff' rx='2'/>
+  <text x='16' y='559' fill='#ffffff' font-size='10' font-weight='bold' dominant-baseline='middle'>Cx</text>
+  <text x='42' y='559' fill='#ccccdd' font-size='12'>Executando na CPU x (cor propria da tarefa)</text>
+  <rect x='12' y='572' width='24' height='14' fill='url(#dots_ready)' rx='2'/>
+  <text x='42' y='579' fill='#ccccdd' font-size='12'>Pronta (fila de prontos, aguardando CPU)</text>
+  <rect x='12' y='592' width='24' height='14' fill='url(#hatch_mutex)' rx='2'/>
+  <text x='42' y='599' fill='#ccccdd' font-size='12'>Suspensa por mutex indisponivel (req 2.9)</text>
+  <rect x='12' y='612' width='24' height='14' fill='url(#hatch_io)' rx='2'/>
+  <text x='42' y='619' fill='#ccccdd' font-size='12'>Suspensa por operacao de E/S (req 3.8)</text>
+  <text x='16' y='642' fill='#00ee55' font-size='14'>&#x2193;</text>
+  <text x='42' y='639' fill='#ccccdd' font-size='12'>Chegada da tarefa ao sistema</text>
+  <text x='16' y='662' fill='#ffcc00' font-size='13'>&#x2713;</text>
+  <text x='42' y='659' fill='#ccccdd' font-size='12'>Tarefa concluida</text>
+  <text x='16' y='682' fill='#ee44ff' font-size='10'>&#x2605;</text>
+  <text x='42' y='679' fill='#ccccdd' font-size='12'>Desempate por sorteio</text>
+  <text x='16' y='702' fill='#ff88ff' font-size='10' font-weight='bold'>ML</text>
+  <text x='42' y='699' fill='#ccccdd' font-size='12'>Solicitacao de mutex (lock) — req 2.8</text>
+  <text x='16' y='722' fill='#aaffaa' font-size='10' font-weight='bold'>MU</text>
+  <text x='42' y='719' fill='#ccccdd' font-size='12'>Liberacao de mutex (unlock) — req 2.8</text>
+  <text x='16' y='742' fill='#44aaff' font-size='10' font-weight='bold'>IO&#x2193;</text>
+  <text x='42' y='739' fill='#ccccdd' font-size='12'>Inicio de operacao de E/S — req 5.1</text>
+  <text x='16' y='762' fill='#ffaa00' font-size='10' font-weight='bold'>IRQ</text>
+  <text x='42' y='759' fill='#ccccdd' font-size='12'>E/S concluida (IRQ gerada) — req 3.4</text>
+  <rect x='12' y='772' width='24' height='14' fill='url(#hatch_off)' rx='2'/>
+  <text x='42' y='779' fill='#ccccdd' font-size='12'>CPU desligada (sem tarefa disponivel)</text>
 </svg>

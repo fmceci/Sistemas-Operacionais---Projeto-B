@@ -4,7 +4,6 @@
 #include "simulation.h"
 
 /*
- * [CORREÇÃO BUG 1] Limite de segurança contra loop infinito / deadlock.
  *
  * Se a simulação passar STALL_LIMIT ticks CONSECUTIVOS sem NENHUM progresso
  * (nenhuma CPU executou e nenhuma E/S está pendente para acordar tarefas),
@@ -39,11 +38,6 @@ void simulation_init(SimulationState *sim, Config *config,
     sim->task_count = task_count;
     for (int i = 0; i < task_count; i++) {
         sim->tasks[i] = tasks[i];
-        /*
-         * [CORREÇÃO BUG 4] A cópia acima é RASA para o ponteiro de eventos.
-         * Fazemos uma CÓPIA PROFUNDA para que 'sim' seja dono da sua própria
-         * memória de eventos e não haja double-free com o vetor original.
-         */
         event_list_init(&sim->tasks[i].event_list);
         event_list_copy(&sim->tasks[i].event_list, &tasks[i].event_list);
     }
@@ -130,8 +124,22 @@ static int execute_tick(SimulationState *sim) {
                 sim->tasks[i].cpu_id           = -1;
                 sim->tasks[i].ticks_this_slice = 0;
 
-                sim->cpus[c].task_id = -1;
-                sim->cpus[c].active  = 0;
+                /*
+                 * [CORRECAO] NAO zeramos sim->cpus[c] aqui. Se limparmos a
+                 * CPU no mesmo tick em que a tarefa termina, o gantt_record()
+                 * (chamado logo depois, ainda neste tick) vai capturar
+                 * cpu_active=0/cpu_task=-1 para este tick, fazendo o
+                 * gantt.c desenhar a célula como "concluida" (preta) em vez
+                 * de "executando" — apagando visualmente o ultimo tick real
+                 * de execucao da tarefa (bug: toda tarefa aparecia com
+                 * duracao 1 a menos no grafico).
+                 *
+                 * A propria assign_tasks(), no INICIO do proximo tick, ja
+                 * cuida de liberar esta CPU: como a tarefa nao esta mais
+                 * RUNNING/READY (esta FINISHED), o escalonador vai atribuir
+                 * outra tarefa a CPU c, ou desliga-la se nao houver nenhuma
+                 * pronta.
+                 */
 
                 printf("  [CONCLUIDA]  T%d terminou no tick %d.\n",
                        sim->tasks[i].id, sim->clock);
@@ -155,7 +163,12 @@ static void check_events(SimulationState *sim,
         for (int j = 0; j < el->count; j++) {
             Event *ev = &el->list[j];
 
+            if (ev->fired) continue; /* [CORRECAO] evento so dispara 1 vez */
             if (ev->rel_tick != sim->tasks[i].ticks_executed) continue;
+
+            ev->fired = 1; /* [CORRECAO] marca como consumido antes de agir,
+                             * mesmo que a tarefa acabe bloqueada logo em
+                             * seguida (ex.: mutex indisponivel) */
 
             if (ev->type == EVT_MUTEX_LOCK) {
                 mutex_lock_mask[i] = 1;
@@ -218,7 +231,6 @@ static int has_pending_tasks(SimulationState *sim) {
     return 0;
 }
 
-/* Há alguma E/S pendente que ainda vai acordar alguma tarefa? */
 static int has_pending_io(SimulationState *sim) {
     return sim->io_queue.count > 0;
 }
@@ -266,11 +278,20 @@ int simulation_step(SimulationState *sim) {
         printf("  [SORTEIO]    Desempate aleatorio ocorreu neste tick.\n");
     }
 
-    int executaram = execute_tick(sim);
-    print_cpu_status(sim);
-
+    /*
+     * [CORRECAO] check_events() precisa rodar ANTES de execute_tick().
+     * execute_tick() incrementa ticks_executed logo no primeiro tick em
+     * que a tarefa roda (de 0 para 1). Se check_events() rodar depois,
+     * o valor ticks_executed==0 nunca eh visto, e qualquer evento com
+     * rel_tick==0 (ex.: "ML01:00", "IO:00-05") jamais dispara. Ao checar
+     * os eventos antes, capturamos ticks_executed==0 no instante exato
+     * em que a tarefa comeca a rodar neste tick.
+     */
     check_events(sim, mutex_lock_mask, mutex_unlock_mask,
                  mutex_blocked_mask, io_start_mask);
+
+    int executaram = execute_tick(sim);
+    print_cpu_status(sim);
 
     gantt_record(&sim->history, sim->clock,
                  sim->cpus, sim->config.cpu_count,
@@ -283,8 +304,6 @@ int simulation_step(SimulationState *sim) {
     sim->clock++;
 
     /*
-     * [CORREÇÃO BUG 1] Detecção de deadlock / stall.
-     *
      * Se neste tick nenhuma CPU executou (executaram == 0) e não há E/S
      * pendente que possa acordar tarefas, incrementamos o contador de stall.
      * Qualquer progresso zera o contador. Ao atingir STALL_LIMIT, abortamos.
@@ -586,5 +605,5 @@ void simulation_run_step_by_step(SimulationState *sim) {
     gantt_save_svg(&sim->history, sim->tasks, sim->task_count, "gantt.svg");
     printf("Simulacao encerrada.\n");
 
-    simulation_free_events(sim); /* [BUG 4] libera memória dos eventos */
+    simulation_free_events(sim); /* libera memória dos eventos */
 }

@@ -15,7 +15,7 @@
 /*
  * pedir_caminho_arquivo - solicita ao usuário o caminho do arquivo de entrada.
  *
- * [CORREÇÃO BUG 2] Quando nenhum arquivo é passado por argumento, em vez de
+ * Quando nenhum arquivo é passado por argumento, em vez de
  * usar um caminho fixo, perguntamos ao usuário. Assim o programa roda QUALQUER
  * arquivo .txt sem recompilar.
  */
@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
         printf("\n");
 
     /*
-     * [CORREÇÃO BUG 3] Menu com os 7 algoritmos selecionáveis.
+     * Menu com os 7 algoritmos selecionáveis.
      * O nome interno (usado no scheduler) está entre parênteses.
      */
     printf("Selecione o algoritmo (ENTER para manter %s):\n", config.algorithm);

@@ -1,4 +1,4 @@
-#define _GNU_SOURCE   /* habilita getline() em algumas plataformas */
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -16,8 +16,7 @@ static void str_to_upper(char *s) {
 /*
  * extrair_id_numerico - extrai o primeiro número presente no token.
  *
- * [CORREÇÃO BUG 1] O ID pode vir como "t03", "T10", "3" etc. Ignoramos
- * qualquer prefixo não numérico e lemos os dígitos.
+ * O ID pode vir como "t03", "T10", "3" etc.
  */
 static int extrair_id_numerico(const char *token) {
     if (token == NULL) return 0;
@@ -32,18 +31,10 @@ int load_config(const char *filename, Config *config, Task tasks[], int *task_co
         return 0;
     }
 
-    /*
-     * [CORREÇÃO BUG 4] Leitura de linhas com tamanho ILIMITADO via getline.
-     * 'line' é (re)alocado automaticamente por getline conforme necessário,
-     * então linhas com milhares de eventos não são truncadas.
-     */
-    char  *line = NULL;
-    size_t cap  = 0;
+        char line[10000];
 
-    /* --- Primeira linha: parâmetros gerais do sistema --- */
-    if (getline(&line, &cap, file) < 0) {
+	if (fgets(line, sizeof(line), file) == NULL) {
         fprintf(stderr, "Erro: arquivo '%s' esta vazio.\n", filename);
-        free(line);
         fclose(file);
         return 0;
     }
@@ -76,7 +67,7 @@ int load_config(const char *filename, Config *config, Task tasks[], int *task_co
 
     /* --- Linhas seguintes: uma tarefa por linha --- */
     *task_count = 0;
-    while (getline(&line, &cap, file) >= 0 && *task_count < MAX_TASKS) {
+    while (fgets(line, sizeof(line), file) != NULL && *task_count < MAX_TASKS) {
         line[strcspn(line, "\r\n")] = '\0';
 
         /* Ignora linhas vazias ou comentários */
@@ -86,7 +77,7 @@ int load_config(const char *filename, Config *config, Task tasks[], int *task_co
         event_list_init(&t->event_list); /* garante ponteiro nulo antes de parsear */
 
         /*
-         * [CORREÇÃO BUG 1] Fazemos o parsing "à mão" dos 5 primeiros campos
+         * Fazemos o parsing "à mão" dos 5 primeiros campos
          * (id;cor;ingresso;duracao;prioridade) localizando os ';'. Assim, todo
          * o RESTANTE da linha (que contém os eventos, possivelmente com muitos
          * ';' internos) é capturado de uma só vez e passado a parse_events().
@@ -157,7 +148,7 @@ int load_config(const char *filename, Config *config, Task tasks[], int *task_co
         (*task_count)++;
     }
 
-    free(line);
+
     fclose(file);
 
     if (*task_count == 0) {

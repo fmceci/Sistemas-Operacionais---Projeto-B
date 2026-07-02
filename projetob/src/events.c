@@ -46,7 +46,7 @@ void event_list_copy(EventList *dst, const EventList *src) {
 
 /*
  * event_list_push - acrescenta um evento à lista, crescendo se necessário.
- * [CORREÇÃO BUG 4] Crescimento geométrico (dobra) para amortizar realloc.
+ * Crescimento geométrico (dobra) para amortizar realloc.
  */
 static void event_list_push(EventList *el, Event ev) {
     if (el->count >= el->capacity) {
@@ -91,6 +91,7 @@ static void parse_one_token(const char *token, EventList *out) {
     ev.rel_tick = 0;
     ev.mutex_id = -1;
     ev.duration = 0;
+    ev.fired    = 0; /* [CORRECAO] nenhum evento nasce disparado */
 
     if (strncmp(token, "ML", 2) == 0) {
         int mid = 0, tick = 0;
@@ -126,7 +127,7 @@ static void parse_one_token(const char *token, EventList *out) {
  * is_event_prefix - retorna o comprimento do prefixo de evento que começa
  * em 'p' (2 para ML/MU, 3 para IO:) ou 0 se não for início de evento.
  *
- * [CORREÇÃO BUG 1] Usado para separar eventos CONCATENADOS sem separador,
+ * Usado para separar eventos CONCATENADOS sem separador,
  * como "IO:01-02MU01:03".
  */
 static int is_event_prefix(const char *p) {
@@ -148,7 +149,7 @@ void parse_events(const char *str, EventList *out) {
 
     /*
      * Trabalhamos sobre uma cópia em maiúsculas alocada dinamicamente,
-     * pois a linha pode conter MUITOS eventos (BUG 4) e não cabe em um
+     * pois a linha pode conter MUITOS eventos e não cabe em um
      * buffer fixo pequeno.
      */
     size_t len = strlen(str);
@@ -160,7 +161,7 @@ void parse_events(const char *str, EventList *out) {
     str_upper_copy(buf, str, len + 1);
 
     /*
-     * [CORREÇÃO BUG 1] Varredura manual (não usamos strtok simples), porque
+     *  Varredura manual (não usamos strtok simples), porque
      * precisamos lidar com três situações ao mesmo tempo:
      *   1. Separadores ';' e ','.
      *   2. Eventos concatenados sem separador ("IO:01-02MU01:03").
