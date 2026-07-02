@@ -1,11 +1,12 @@
 # Makefile - Projeto B
-# Simulador de SO Multitarefa com Mutex, E/S e PRIOPEnv
+# Simulador de SO Multitarefa com Mutex, E/S e escalonadores diversos
 
 CC      = gcc
 CFLAGS  = -Wall -Wextra -g -std=c11
 TARGET  = simulador
 
-# Todos os arquivos-fonte do projeto
+# Arquivos-fonte do projeto (parser.c REMOVIDO: era codigo morto com
+# caminho hardcoded; o carregamento real e feito por config.c).
 SRCS = main.c \
        config.c \
        task.c \
@@ -28,7 +29,7 @@ $(TARGET): $(OBJS)
 %.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-# Dependências explícitas (para recompilação correta ao mudar headers)
+# Dependencias explicitas
 main.o:       main.c config.h task.h events.h simulation.h scheduler.h gantt.h
 config.o:     config.c config.h task.h events.h
 task.o:       task.c task.h events.h
@@ -39,7 +40,7 @@ scheduler.o:  scheduler.c scheduler.h task.h config.h
 simulation.o: simulation.c simulation.h task.h config.h scheduler.h gantt.h mutex.h io.h
 gantt.o:      gantt.c gantt.h task.h scheduler.h config.h
 
-# Atalhos de execução
+# Atalhos de execucao
 run: $(TARGET)
 	./$(TARGET) ../entrada.txt
 
