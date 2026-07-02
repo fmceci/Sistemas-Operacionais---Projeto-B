@@ -1,4 +1,5 @@
- #include <stdio.h>
+#define _GNU_SOURCE   /* habilita getline() em algumas plataformas */
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
@@ -6,31 +7,24 @@
 #include "events.h"
 
 /*
- * str_to_upper - converte uma string para maiúsculas in-place.
- *
- * Necessário para atender ao requisito 3.3.2: strings como "SRTF",
- * "srtf" e "SrTf" devem ser tratadas como equivalentes.
+ * str_to_upper - converte uma string para maiúsculas in-place (req 3.3.2).
  */
 static void str_to_upper(char *s) {
     for (; *s; s++) *s = (char)toupper((unsigned char)*s);
 }
 
 /*
- * load_config - abre e interpreta o arquivo de configuração.
+ * extrair_id_numerico - extrai o primeiro número presente no token.
  *
- * Formato esperado:
- *   Linha 1 (Projeto A): algoritmo;quantum;qtde_cpus
- *   Linha 1 (Projeto B): PRIOPEnv;quantum;qtde_cpus;alpha
- *   Linha 2+: id;cor;ingresso;duracao;prioridade[;lista_eventos]
- *
- * Parâmetros:
- *   filename   - caminho do arquivo de configuração
- *   config     - ponteiro para a estrutura Config a preencher
- *   tasks      - vetor de Task a preencher
- *   task_count - ponteiro para o contador de tarefas lidas
- *
- * Retorna 1 em sucesso, 0 em falha.
+ * [CORREÇÃO BUG 1] O ID pode vir como "t03", "T10", "3" etc. Ignoramos
+ * qualquer prefixo não numérico e lemos os dígitos.
  */
+static int extrair_id_numerico(const char *token) {
+    if (token == NULL) return 0;
+    while (*token && !isdigit((unsigned char)*token)) token++;
+    return atoi(token);
+}
+
 int load_config(const char *filename, Config *config, Task tasks[], int *task_count) {
     FILE *file = fopen(filename, "r");
     if (file == NULL) {
@@ -38,11 +32,18 @@ int load_config(const char *filename, Config *config, Task tasks[], int *task_co
         return 0;
     }
 
-    char line[MAX_LINE];
+    /*
+     * [CORREÇÃO BUG 4] Leitura de linhas com tamanho ILIMITADO via getline.
+     * 'line' é (re)alocado automaticamente por getline conforme necessário,
+     * então linhas com milhares de eventos não são truncadas.
+     */
+    char  *line = NULL;
+    size_t cap  = 0;
 
-    /* --- Lê a primeira linha: parâmetros gerais do sistema --- */
-    if (fgets(line, sizeof(line), file) == NULL) {
+    /* --- Primeira linha: parâmetros gerais do sistema --- */
+    if (getline(&line, &cap, file) < 0) {
         fprintf(stderr, "Erro: arquivo '%s' esta vazio.\n", filename);
+        free(line);
         fclose(file);
         return 0;
     }
@@ -53,7 +54,7 @@ int load_config(const char *filename, Config *config, Task tasks[], int *task_co
     if (token != NULL) {
         strncpy(config->algorithm, token, MAX_ALGO - 1);
         config->algorithm[MAX_ALGO - 1] = '\0';
-        str_to_upper(config->algorithm); /* req 3.3.2 */
+        str_to_upper(config->algorithm);
     } else {
         strcpy(config->algorithm, "SRTF");
     }
@@ -68,58 +69,77 @@ int load_config(const char *filename, Config *config, Task tasks[], int *task_co
     config->cpu_count = (token != NULL) ? atoi(token) : 2;
     if (config->cpu_count < 2) config->cpu_count = 2;
 
-    /*
-     * Alpha (Projeto B, req 1.1) — presente apenas quando o algoritmo
-     * é PRIOPEnv. Para os demais, alpha fica em 0 (sem efeito).
-     */
+    /* Alpha (envelhecimento; usado por PRIOd/PRIOPEnv) */
     token = strtok(NULL, ";");
     config->alpha = (token != NULL) ? atoi(token) : 0;
     if (config->alpha < 0) config->alpha = 0;
 
-    /* --- Lê as linhas seguintes: uma tarefa por linha --- */
+    /* --- Linhas seguintes: uma tarefa por linha --- */
     *task_count = 0;
-    while (fgets(line, sizeof(line), file) != NULL && *task_count < MAX_TASKS) {
+    while (getline(&line, &cap, file) >= 0 && *task_count < MAX_TASKS) {
         line[strcspn(line, "\r\n")] = '\0';
 
         /* Ignora linhas vazias ou comentários */
         if (strlen(line) == 0 || line[0] == '#') continue;
 
         Task *t = &tasks[*task_count];
+        event_list_init(&t->event_list); /* garante ponteiro nulo antes de parsear */
 
-        /* id */
-        token = strtok(line, ";");
-        if (token == NULL) continue;
-        t->id = atoi(token);
+        /*
+         * [CORREÇÃO BUG 1] Fazemos o parsing "à mão" dos 5 primeiros campos
+         * (id;cor;ingresso;duracao;prioridade) localizando os ';'. Assim, todo
+         * o RESTANTE da linha (que contém os eventos, possivelmente com muitos
+         * ';' internos) é capturado de uma só vez e passado a parse_events().
+         *
+         * Não usamos strtok aqui para não "perder" os separadores da cauda.
+         */
+        char *p = line;
+        char *campos[5] = {0};
+        int   nc = 0;
+
+        /* separa os 5 primeiros campos */
+        campos[nc++] = p;
+        while (nc < 5) {
+            char *sep = strchr(p, ';');
+            if (sep == NULL) { p = NULL; break; }
+            *sep = '\0';
+            p = sep + 1;
+            campos[nc++] = p;
+        }
+
+        /* Se a linha não tem os 5 campos mínimos, ignora */
+        if (nc < 5) {
+            event_list_free(&t->event_list);
+            continue;
+        }
+
+        /* A cauda (eventos) é tudo que sobra após o 5º ';' */
+        char *cauda_eventos = p; /* pode ser NULL se não houver eventos */
+
+        /* id (aceita prefixo textual como "t03") */
+        t->id = extrair_id_numerico(campos[0]);
 
         /* cor */
-        token = strtok(NULL, ";");
-        if (token != NULL) {
-            strncpy(t->color, token, 7);
+        if (campos[1] != NULL && campos[1][0] != '\0') {
+            strncpy(t->color, campos[1], 7);
             t->color[7] = '\0';
         } else {
             strcpy(t->color, "AAAAAA");
         }
 
         /* ingresso */
-        token = strtok(NULL, ";");
-        t->arrival_time = (token != NULL) ? atoi(token) : 0;
+        t->arrival_time = atoi(campos[2]);
 
         /* duração */
-        token = strtok(NULL, ";");
-        t->duration = (token != NULL) ? atoi(token) : 1;
+        t->duration = atoi(campos[3]);
         if (t->duration < 1) t->duration = 1;
         t->remaining_time = t->duration;
 
         /* prioridade */
-        token = strtok(NULL, ";");
-        t->priority = (token != NULL) ? atoi(token) : 0;
+        t->priority = atoi(campos[4]);
 
-        /*
-         * Lista de eventos (Projeto B) — o campo pode estar ausente.
-         * parse_events() aceita NULL e "-" como "sem eventos".
-         */
-        token = strtok(NULL, ";");
-        parse_events(token, &t->event_list);
+        /* eventos (toda a cauda de uma vez) */
+        parse_events(cauda_eventos, &t->event_list);
 
         /* --- Inicializa campos de controle --- */
         t->state              = NEW;
@@ -128,7 +148,7 @@ int load_config(const char *filename, Config *config, Task tasks[], int *task_co
         t->finish_time        = -1;
         t->ticks_this_slice   = 0;
 
-        /* Campos novos do Projeto B */
+        /* Campos do Projeto B */
         t->priority_dynamic   = t->priority;
         t->ticks_in_queue     = 0;
         t->ticks_executed     = 0;
@@ -137,6 +157,7 @@ int load_config(const char *filename, Config *config, Task tasks[], int *task_co
         (*task_count)++;
     }
 
+    free(line);
     fclose(file);
 
     if (*task_count == 0) {

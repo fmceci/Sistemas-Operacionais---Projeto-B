@@ -6,7 +6,7 @@
 #include "config.h"
 
 /* Número máximo de ticks que o histórico do Gantt pode armazenar */
-#define MAX_TICKS 1024
+#define MAX_TICKS 65536
 
 /*
  * GanttEntry - snapshot do estado completo do sistema em um único tick.
