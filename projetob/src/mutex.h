@@ -64,4 +64,29 @@ void mutex_table_init(MutexTable *table);
  * Procura a chave pelo ID. Se ela não existir, cria uma nova chave novinha e livre.
  * Se o chaveiro estiver lotado (passou de 32), devolve NULL (Erro).
  */
-Mutex
+Mutex *mutex_find_or_create(MutexTable *table, int mutex_id);
+
+/*
+ * mutex_lock
+ * Uma tarefa tenta pegar uma chave para entrar na Região Crítica.
+ * * IMPORTANTE para quem for usar esta função (O Escalonador):
+ * - Retorna 0: A chave estava livre! A tarefa a pegou e deve continuar rodando (RUNNING).
+ * - Retorna 1: A chave estava ocupada! A tarefa entrou na fila de espera e o 
+ * escalonador OBRIGATORIAMENTE precisa suspendê-la (SUSPENDED).
+ */
+int mutex_lock(MutexTable *table, int mutex_id, int task_id);
+
+/*
+ * mutex_unlock
+ * A tarefa terminou de usar a Região Crítica e está devolvendo a chave.
+ *
+ * Regras e retornos:
+ * - Remove o nome da tarefa do campo 'owner_id'.
+ * - Se a fila estiver VAZIA: A chave fica livre e a função devolve -1.
+ * - Se tiver gente na fila: A primeira tarefa da fila herda a chave instantaneamente.
+ * A função vai retornar o ID do novo sortudo, e o escalonador OBRIGATORIAMENTE
+ * precisa tirar essa tarefa do estado SUSPENDED e colocá-la como READY (Pronta).
+ */
+int mutex_unlock(MutexTable *table, int mutex_id, int task_id);
+
+#endif /* MUTEX_H */
