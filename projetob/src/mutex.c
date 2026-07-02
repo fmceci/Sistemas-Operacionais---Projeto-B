@@ -84,4 +84,64 @@ int mutex_lock(MutexTable *table, int mutex_id, int task_id) {
     /* Verifica se ainda cabe gente na fila de espera. */
     if (m->queue_len < MAX_MUTEX_QUEUE) {
         /* Coloca a tarefa atual no final da fila de espera do mutex */
-        m->wait_queue[m->queue_len++] = task
+        m->wait_queue[m->queue_len++] = task_id;
+        printf("  [MUTEX]      T%d bloqueada aguardando mutex M%d (dono: T%d).\n",
+               task_id, mutex_id, m->owner_id);
+        return 1; /* Retorna 1 para avisar ao SO: "Bloqueia essa tarefa!" */
+    }
+
+    /* Cenário C (Raro): A fila de espera do mutex lotou. */
+    fprintf(stderr, "Aviso: fila do mutex M%d cheia. T%d nao bloqueou.\n",
+            mutex_id, task_id);
+    return 0; /* Deixa continuar para não travar o sistema irreversivelmente */
+}
+
+/*
+ * mutex_unlock - A tarefa dona da chave terminou de usar e quer devolver.
+ *
+ * Retornos importantes para o Escalonador:
+ * -> Retorna -1: Chave devolvida, mas não tinha ninguém esperando.
+ * -> Retorna um ID (>0): Chave devolvida para o ID X. O SO precisa acordar essa tarefa!
+ */
+int mutex_unlock(MutexTable *table, int mutex_id, int task_id) {
+    Mutex *m = mutex_find_or_create(table, mutex_id);
+    if (m == NULL) return -1;
+
+    /* REGRA DE SEGURANÇA: Só o dono da chave pode devolver a chave!
+     * Isso impede que uma tarefa maliciosa ou bugada libere o mutex de outra. */
+    if (m->owner_id != task_id) {
+        fprintf(stderr,
+                "Aviso: T%d tentou liberar mutex M%d, mas o dono e T%d.\n",
+                task_id, mutex_id, m->owner_id);
+        return -1;
+    }
+
+    /* Cenário A: Ninguém estava na fila esperando. */
+    if (m->queue_len == 0) {
+        m->owner_id = -1; /* O mutex fica completamente livre */
+        printf("  [MUTEX]      T%d liberou mutex M%d (livre agora).\n",
+               task_id, mutex_id);
+        return -1; /* Avisa ao SO que ninguém precisa ser acordado */
+    }
+
+    /* Cenário B: Tem gente na fila! 
+     * Pega a primeira tarefa da fila (política FIFO - First In, First Out) */
+    int next_task = m->wait_queue[0];
+
+    /* Como tiramos o primeiro da fila, todos os outros dão um passo à frente.
+     * Fazemos um "shift" (deslocamento) dos IDs para a esquerda do vetor. */
+    for (int i = 0; i < m->queue_len - 1; i++) {
+        m->wait_queue[i] = m->wait_queue[i + 1];
+    }
+    m->queue_len--; /* Reduz o tamanho da fila, já que um saiu */
+
+    /* A primeira tarefa da fila agora é a nova dona oficial da chave */
+    m->owner_id = next_task;
+
+    printf("  [MUTEX]      T%d liberou mutex M%d → T%d o recebeu e volta para PRONTO.\n",
+           task_id, mutex_id, next_task);
+
+    /* Devolve o ID da tarefa que ganhou a chave.
+     * O Escalonador usará esse ID para mudar o estado dela de BLOQUEADA para PRONTA. */
+    return next_task; 
+}
