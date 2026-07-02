@@ -2,119 +2,86 @@
 #include <string.h>
 #include "mutex.h"
 
+/* =======================================================================
+ * INICIALIZAÇÃO E GERENCIAMENTO DE MUTEXES
+ * ======================================================================= */
+
 /*
- * mutex_table_init - zera a tabela de mutexes.
+ * mutex_table_init - Zera a tabela (o "chaveiro" do sistema) de mutexes.
+ * * Objetivo: Preparar o sistema quando ele é ligado. 
+ * Garante que não haja lixo de memória atrapalhando a contagem.
  */
 void mutex_table_init(MutexTable *table) {
+    /* Preenche toda a estrutura de memória com zeros e zera o contador */
     memset(table, 0, sizeof(*table));
     table->count = 0;
 }
 
 /*
- * mutex_find_or_create - busca o mutex pelo ID; cria se não existir.
+ * mutex_find_or_create - Busca um mutex pelo seu ID numérico; cria um se não existir.
  *
- * Criação lazy: mutexes só existem quando uma tarefa tenta adquiri-los
- * pela primeira vez. Isso evita que o arquivo de configuração precise
- * declarar mutexes explicitamente.
+ * Objetivo: Criação "Preguiçosa" (Lazy). Em vez de obrigar o usuário a 
+ * declarar no arquivo TXT "vou usar o mutex 1 e o 2", o sistema cria a 
+ * chave automaticamente na primeira vez que alguém tentar usá-la.
  */
 Mutex *mutex_find_or_create(MutexTable *table, int mutex_id) {
-    /* Busca linear (número de mutexes é pequeno) */
+    
+    /* 1. Busca Linear: Procura no chaveiro se essa chave já existe */
     for (int i = 0; i < table->count; i++) {
         if (table->mutexes[i].id == mutex_id) {
-            return &table->mutexes[i];
+            return &table->mutexes[i]; /* Achou! Devolve a chave existente */
         }
     }
 
-    /* Não encontrou: cria novo mutex livre */
+    /* 2. Não achou: Precisamos fabricar uma chave nova.
+     * Primeiro verificamos se ainda há espaço no chaveiro (limite máximo). */
     if (table->count >= MAX_MUTEXES) {
         fprintf(stderr, "Erro: numero maximo de mutexes (%d) atingido.\n",
                 MAX_MUTEXES);
         return NULL;
     }
 
+    /* 3. Fabrica a nova chave em uma posição livre da tabela */
     Mutex *m     = &table->mutexes[table->count++];
     m->id        = mutex_id;
-    m->owner_id  = -1;  /* livre */
-    m->queue_len = 0;
+    m->owner_id  = -1;  /* Ninguém é dono dela ainda (-1 = livre) */
+    m->queue_len = 0;   /* A fila de espera começa vazia */
+    
+    /* Preenche a fila de espera com -1 (indicando posições vazias) */
     memset(m->wait_queue, -1, sizeof(m->wait_queue));
 
     return m;
 }
 
+
+/* =======================================================================
+ * OPERAÇÕES PRINCIPAIS: LOCK (Trancar) e UNLOCK (Destrancar)
+ * ======================================================================= */
+
 /*
- * mutex_lock - tenta adquirir o mutex para a tarefa.
+ * mutex_lock - Uma tarefa tenta pegar a chave (adquirir o mutex).
  *
- * Retorna 0 se adquiriu (tarefa continua RUNNING).
- * Retorna 1 se bloqueou (chamador deve colocar tarefa em SUSPENDED).
+ * Retornos importantes para o Escalonador (quem chamou a função):
+ * -> Retorna 0: A tarefa conseguiu a chave (ou houve erro tolerável) e continua rodando (RUNNING).
+ * -> Retorna 1: A chave estava em uso. A tarefa foi bloqueada (deve ir para SUSPENDED/BLOCKED).
  */
 int mutex_lock(MutexTable *table, int mutex_id, int task_id) {
     Mutex *m = mutex_find_or_create(table, mutex_id);
-    if (m == NULL) return 0; /* Falha silenciosa: deixa a tarefa continuar */
+    
+    /* Se deu erro ao criar a chave (ex: limite atingido), finge que não aconteceu nada
+     * para não quebrar a simulação inteira. */
+    if (m == NULL) return 0; 
 
+    /* Cenário A: A chave está livre! */
     if (m->owner_id == -1) {
-        /* Mutex livre: a tarefa o adquire imediatamente */
+        /* A tarefa atual anota seu nome na chave (vira a dona) */
         m->owner_id = task_id;
         printf("  [MUTEX]      T%d adquiriu mutex M%d.\n", task_id, mutex_id);
-        return 0; /* não bloqueou */
+        return 0; /* Sucesso. A tarefa não precisa ser bloqueada. */
     }
 
-    /* Mutex ocupado: entra na fila de espera */
+    /* Cenário B: A chave já tem dono! (Mutex ocupado) */
+    /* Verifica se ainda cabe gente na fila de espera. */
     if (m->queue_len < MAX_MUTEX_QUEUE) {
-        m->wait_queue[m->queue_len++] = task_id;
-        printf("  [MUTEX]      T%d bloqueada aguardando mutex M%d (dono: T%d).\n",
-               task_id, mutex_id, m->owner_id);
-        return 1; /* bloqueou */
-    }
-
-    /* Fila cheia (improvável): deixa continuar sem bloquear */
-    fprintf(stderr, "Aviso: fila do mutex M%d cheia. T%d nao bloqueou.\n",
-            mutex_id, task_id);
-    return 0;
-}
-
-/*
- * mutex_unlock - libera o mutex e acorda a próxima tarefa da fila, se houver.
- *
- * Retorna o ID da tarefa acordada, ou -1 se a fila estava vazia.
- */
-int mutex_unlock(MutexTable *table, int mutex_id, int task_id) {
-    Mutex *m = mutex_find_or_create(table, mutex_id);
-    if (m == NULL) return -1;
-
-    /* Verifica se quem está liberando é realmente o dono */
-    if (m->owner_id != task_id) {
-        fprintf(stderr,
-                "Aviso: T%d tentou liberar mutex M%d, mas o dono e T%d.\n",
-                task_id, mutex_id, m->owner_id);
-        return -1;
-    }
-
-    if (m->queue_len == 0) {
-        /* Nenhuma tarefa esperando: mutex fica livre */
-        m->owner_id = -1;
-        printf("  [MUTEX]      T%d liberou mutex M%d (livre agora).\n",
-               task_id, mutex_id);
-        return -1;
-    }
-
-    /*
-     * Há tarefas esperando: a primeira da fila recebe o mutex (FIFO).
-     * Essa escolha segue a política FIFO simples — sem herança de prioridade
-     * (que seria necessária para tratar inversão de prioridade, um item
-     * de análise mencionado no enunciado mas não obrigatório na implementação).
-     */
-    int next_task = m->wait_queue[0];
-
-    /* Remove o primeiro da fila (shift para a esquerda) */
-    for (int i = 0; i < m->queue_len - 1; i++) {
-        m->wait_queue[i] = m->wait_queue[i + 1];
-    }
-    m->queue_len--;
-
-    m->owner_id = next_task;
-
-    printf("  [MUTEX]      T%d liberou mutex M%d → T%d o recebeu e volta para PRONTO.\n",
-           task_id, mutex_id, next_task);
-
-    return next_task; /* chamador deve acordar esta tarefa (→ READY) */
-}
+        /* Coloca a tarefa atual no final da fila de espera do mutex */
+        m->wait_queue[m->queue_len++] = task
